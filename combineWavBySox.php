@@ -1,7 +1,7 @@
 <?php
 
 $inputFilePath = "dest/wav";
-$outputDir = "dest/union";
+$outputDir = "dest/combined";
 
 try {
     exec("ls {$inputFilePath}", $inputFiles);

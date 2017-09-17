@@ -1,2 +1,5 @@
 composer.phar
 vendor/*
+dest/txt/*.txt
+dest/wav/*.wav
+dest/combined/*.wav
