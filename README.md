@@ -12,7 +12,7 @@ ubuntu 14.04.2 LTSもしくはそれ以上のバージョン
 sudo apt-get install -y open-jtalk open-jtalk-mecab-naist-jdic libhtsengine1 htsengine
 wget http://kr.archive.ubuntu.com/ubuntu/pool/multiverse/h/hts-voice-nitech-jp-atr503-m001/hts-voice-nitech-jp-atr503-m001_1.05-1_all.deb
 sudo dpkg -i hts-voice-nitech-jp-atr503-m001_1.05-1_all.deb
-sudo apt-get install -y alsa-utils unzip
+sudo apt-get install -y alsa-utils unzip git php5 php5-curl
 sudo apt-get install -y sox
 ```
 
