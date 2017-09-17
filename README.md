@@ -57,7 +57,7 @@ unzip MMDAgent_Example-1.4.zip
 
 ```
 cd MMDAgent_Example-1.4/Voice
-cp -R mei /usr/share/hts-voice
+sudo cp -R mei /usr/share/hts-voice
 ```
 
 最後にcomposer.jsonに定義されているライブラリをインストールします。  
