@@ -4,8 +4,8 @@ machine:
     version: 7.1.6
 
 dependencies:
-    #cache_directories:
-    #ca- .composer/cache
+  cache_directories:
+    - .composer/cache
   pre:
     - composer config -g github-oauth.github.com $GITHUB_OAUTH_TOKEN
     - echo "memory_limit = 2048M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
