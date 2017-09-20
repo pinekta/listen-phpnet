@@ -1,0 +1,18 @@
+machine:
+  timezone: Asia/Tokyo
+  php:
+    version: 7.1.6
+
+dependencies:
+  cache_directories:
+    - .composer/cache
+  pre:
+    - composer config -g github-oauth.github.com $GITHUB_OAUTH_TOKEN
+    - echo "memory_limit = 2048M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
+  #override:
+      #- composer install --dev --no-interaction --working-dir=www/common
+
+test:
+  override:
+    - sh script/saddler.sh
+    #- exit 0
