@@ -12,8 +12,8 @@ $destTxtPath = './dest/txt';
 $destWavPath = './dest/wav';
 
 $maxBuffer = 1024;
-
 $pageCount = 0;
+
 foreach ($pages as $pageName) {
     $pageCount++;
     $client = new Client();
