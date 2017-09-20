@@ -15,4 +15,3 @@ dependencies:
 test:
   override:
     - sh script/saddler.sh
-    #- exit 0
