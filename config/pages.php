@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * 対象のページ名
+ * @var array
+ */
 $pages = [
     // はじめに
     "intro-whatis",
