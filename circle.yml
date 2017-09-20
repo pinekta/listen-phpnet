@@ -9,8 +9,8 @@ dependencies:
   pre:
     - composer config -g github-oauth.github.com $GITHUB_OAUTH_TOKEN
     - echo "memory_limit = 2048M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
-  #override:
-      #- composer install --dev --no-interaction --working-dir=www/common
+  override:
+      composer install --dev --no-interaction
 
 test:
   override:
